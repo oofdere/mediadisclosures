@@ -2,6 +2,7 @@
 **An open-source, always evolving, universal content rating system.**
 
 ## Ratings
+Click the triangles to expand.
 ### Special
 <details>
     <summary>UGC  - User-generated Content</summary>
