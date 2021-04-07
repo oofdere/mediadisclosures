@@ -1,0 +1,7 @@
+<div class="content">
+    <h3>{{ include.category }}</h3>
+    
+    {% for rating in site.[include.category] %}
+        {% include rating.html id=rating.icon-id name=rating.name description=rating.content %}
+    {% endfor %}
+</div>
