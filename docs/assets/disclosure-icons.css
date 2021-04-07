@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'disclosure-icons';
-  src:  url('https://disclosure.media/assets/disclosure-icons.eot?f4033a');
-  src:  url('https://disclosure.media/assets/disclosure-icons.eot?f4033a#iefix') format('embedded-opentype'),
-    url('https://disclosure.media/assets/disclosure-icons.ttf?f4033a') format('truetype'),
-    url('https://disclosure.media/assets/disclosure-icons.woff?f4033a') format('woff'),
-    url('https://disclosure.media/assets/disclosure-icons.svg?f4033a#disclosure-icons') format('svg');
+  src:  url('https://disclosures.media/assets/disclosure-icons.eot?f4033a');
+  src:  url('https://disclosures.media/assets/disclosure-icons.eot?f4033a#iefix') format('embedded-opentype'),
+    url('https://disclosures.media/assets/disclosure-icons.ttf?f4033a') format('truetype'),
+    url('https://disclosures.media/assets/disclosure-icons.woff?f4033a') format('woff'),
+    url('https://disclosures.media/assets/disclosure-icons.svg?f4033a#disclosure-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
