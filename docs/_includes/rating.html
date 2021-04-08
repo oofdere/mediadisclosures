@@ -2,7 +2,7 @@
     <summary id={{include.id}} class="collapse-header without-arrow font-size-16">
         {% capture light %}color: #{{ include.light }};{% endcapture %}
         {% capture dark %}color: #{{ include.dark }};{% endcapture %}
-        <span class="disclosure font-size-18 hidden-dm" style="{{light}}">{{ include.id }}</span><span class="disclosure font-size-18 hidden-lm" style="{{dark}}">{{ include.id }}</span> <span class="text-muted">{{ include.name }}</span>
+        <span class="disclosure font-size-24 hidden-dm align-middle" style="{{light}}">{{ include.id }}</span><span class="disclosure font-size-24 hidden-lm align-middle" style="{{dark}}">{{ include.id }}</span> <span class="text-muted font-size-18 align-middle">{{ include.name }}</span>
         <span class="hidden-collapse-open text-muted float-right">＋</span>
         <span class="hidden-collapse-closed text-muted float-right">－</span>
     </summary>

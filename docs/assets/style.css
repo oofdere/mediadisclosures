@@ -11,6 +11,6 @@ details > summary::-webkit-details-marker {
   white-space: nowrap;
 }
 
-.h-scroll-element {
+.disclosure {
   display: inline-block;
 }
