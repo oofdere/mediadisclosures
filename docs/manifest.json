@@ -1,0 +1,28 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Media Disclosures",
+    "short_name": "MediaDiscs",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "/",
+    "background_color": "#000000",
+    "theme_color": "transparent",
+    "description": "An open-source, always evolving, universal content rating system.",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/assets/pwa-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/assets/pwa-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "url": "https://disclosures.media"
+}

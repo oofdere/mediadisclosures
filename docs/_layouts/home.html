@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<!-- Page wrapper start -->
+<div class="page-wrapper with-navbar with-navbar-fixed-bottom" data-sidebar-type="full-height overlayed-sm-and-down">
+    {% include top_navbar.html %}
+
+    <!-- Content wrapper start -->
+    <div class="content-wrapper">
+        <div class="container-fluid">
+            <div class="content">
+                <noscript>
+                    <div class="alert alert-secondary" role="alert">
+                        <h4 class="alert-heading">JavaScript not enabled.</h4>
+                        This website uses JavaScript to show only the relevant ratings and enable dark mode.
+                    </div>
+                </noscript>
+                {{ content }}
+                <!--
+                    Add your page's main content here
+                    Examples:
+                    1. https://www.gethalfmoon.com/docs/content-and-cards/#building-a-page
+                    2. https://www.gethalfmoon.com/docs/grid-system/#building-a-dashboard
+                -->
+            </div>
+        </div>
+    </div>
+    <!-- Content wrapper end -->
+
+    {% include bottom_navbar.html %}
+</div>

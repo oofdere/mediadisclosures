@@ -5,8 +5,15 @@
 <meta name="viewport" content="width=device-width" />
 
 <!-- Favicon and title -->
-<link rel="icon" href="path/to/fav.png">
 <title>{{ page.title }}</title>
+<link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/android-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon-180x180.png" sizes="180x180">
+<meta name="msapplication-config" content="/assets/browserconfig.xml">
+
+<!-- PWA -->
+<link rel='manifest' href='/manifest.json'>
 
 <!-- Icons and CSS patches -->
 <link rel="stylesheet" href="assets/disclosure-icons.css">
@@ -16,3 +23,6 @@
 <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
 
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "03b6dd28dfd54a1291189b25004adaf5"}'></script><!-- End Cloudflare Web Analytics -->
+
+<!-- Web Monetization Tag -->
+<meta name="monetization" content="$ilp.uphold.com/GAgELwPbUpUD">

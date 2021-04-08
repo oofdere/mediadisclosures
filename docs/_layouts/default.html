@@ -1,49 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     {% include head.html %}
 </head>
-<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
-  <!-- Modals go here -->
-  <!-- Reference: https://www.gethalfmoon.com/docs/modal -->
 
-  <!-- Page wrapper start -->
-  <div class="page-wrapper with-navbar with-navbar-fixed-bottom" data-sidebar-type="full-height overlayed-sm-and-down">
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true"
+    data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+    <!-- Modals go here -->
+    <!-- Reference: https://www.gethalfmoon.com/docs/modal -->
 
-    <!-- Sticky alerts (toasts), empty container -->
-    <!-- Reference: https://www.gethalfmoon.com/docs/sticky-alerts-toasts -->
-    <div class="sticky-alerts"></div>
+    {{ content }}
 
-    {% include top_navbar.html %}
+    <!-- Halfmoon JS -->
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
 
-    <!-- Content wrapper start -->
-    <div class="content-wrapper">
-        <div class="container-fluid">
-            <div class="content">
-                <noscript>
-                    <div class="alert alert-secondary" role="alert">
-                        <h4 class="alert-heading">JavaScript not enabled.</h4>
-                        This website uses JavaScript to show only the relevant ratings and enable dark mode.
-                    </div>
-                </noscript>
-                {{ content }}
-                <!--
-                    Add your page's main content here
-                    Examples:
-                    1. https://www.gethalfmoon.com/docs/content-and-cards/#building-a-page
-                    2. https://www.gethalfmoon.com/docs/grid-system/#building-a-dashboard
-                -->
-            </div>
-        </div>
-    </div>
-    <!-- Content wrapper end -->
+    <!-- PWABuilder JS -->
+    <script type="module">
+        /*
+        This code uses the pwa-update web component https://github.com/pwa-builder/pwa-update to register your service worker,
+        tell the user when there is an update available and let the user know when your PWA is ready to use offline.
+        */
 
-    {% include bottom_navbar.html %}
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
 
-  </div>
-  <!-- Page wrapper end -->
-
-  <!-- Halfmoon JS -->
-  <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    </script>
 </body>
+
 </html>
