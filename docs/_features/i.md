@@ -1,7 +1,8 @@
 ---
 name: Interactive
 icon-id: I
-hex: 00798C
+light: 00798C
+dark: 00A8C2
 ---
 
 This work expects or requires active interaction from its users.

@@ -1,7 +1,8 @@
 ---
 name: Gambling
 icon-id: GA
-hex: 012A36
+light: 012A36
+dark: 01AD96
 ---
 
 This work may contain depictions of gambling.

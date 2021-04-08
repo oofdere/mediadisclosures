@@ -1,7 +1,8 @@
 <details class="collapse-panel">
     <summary id={{include.id}} class="collapse-header without-arrow font-size-16">
-        {% capture hex %}color: #{{ include.hex }};{% endcapture %}
-        <span class="disclosure font-size-18" style="{{hex}}">{{ include.id }}</span> <span class="text-muted">{{ include.name }}</span>
+        {% capture light %}color: #{{ include.light }};{% endcapture %}
+        {% capture dark %}color: #{{ include.dark }};{% endcapture %}
+        <span class="disclosure font-size-18 hidden-dm" style="{{light}}">{{ include.id }}</span><span class="disclosure font-size-18 hidden-lm" style="{{dark}}">{{ include.id }}</span> <span class="text-muted">{{ include.name }}</span>
         <span class="hidden-collapse-open text-muted float-right">＋</span>
         <span class="hidden-collapse-closed text-muted float-right">－</span>
     </summary>

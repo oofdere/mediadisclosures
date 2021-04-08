@@ -2,8 +2,9 @@
     <!-- Reference: https://www.gethalfmoon.com/docs/navbar#navbar-fixed-bottom -->
     <div class="">
     {% for rating in site.documents %}
-        {% capture hex %}color: #{{ rating.hex }};{% endcapture %}
-        <a href="#{{ rating.icon-id }}" style="{{hex}}"><span class="disclosure font-size-18" style="vertical-align: middle;">{{ rating.icon-id }}-</span></a>
+        {% capture light %}color: #{{ rating.light }};{% endcapture %}
+        {% capture dark %}color: #{{ rating.dark }};{% endcapture %}
+        <a href="#{{ rating.icon-id }}"><span class="disclosure font-size-18 hidden-dm" style="{{light}}">{{ rating.icon-id }}-</span><span class="disclosure font-size-18 hidden-lm" style="{{dark}}">{{ rating.icon-id }}-</span></a>
     {% endfor %}
     </div>
 
