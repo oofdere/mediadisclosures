@@ -1,6 +1,9 @@
-<nav class="navbar navbar-fixed-bottom">
+<nav class="navbar navbar-fixed-bottom overflow-scroll">
     <!-- Reference: https://www.gethalfmoon.com/docs/navbar#navbar-fixed-bottom -->
-    <p>Very far from final at the moment. </p>
+    
+    {% for rating in site.documents %}
+        <a href="#{{ rating.icon-id }}"><span class="disclosure font-size-18" style="vertical-align: middle;">{{ rating.icon-id }}-</span></a>
+    {% endfor %}
 
-    <button class="btn btn-square rounded-circle float-right ml-auto" type="button" onclick="halfmoon.toggleDarkMode()"><span class="hidden-dm">🌑</span><span class="hidden-lm">☀️</span></button>
+    <div><button class="btn btn-square rounded-circle float-right ml-auto" type="button" onclick="halfmoon.toggleDarkMode()"><span class="hidden-dm">🌑</span><span class="hidden-lm">☀️</span></button></div>
 </nav>
