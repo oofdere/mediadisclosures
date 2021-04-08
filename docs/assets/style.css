@@ -4,3 +4,13 @@ details > summary {
 details > summary::-webkit-details-marker {
   display: none;
 }
+
+.h-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.h-scroll-element {
+  display: inline-block;
+}
