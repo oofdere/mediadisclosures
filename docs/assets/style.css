@@ -1,3 +1,4 @@
+/* Hide arrow on details elements */
 details > summary {
   list-style: none;
 }
@@ -5,6 +6,7 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
+/* Bottom navigation */
 .h-scroll {
   overflow-x: auto;
   overflow-y: hidden;
@@ -13,4 +15,18 @@ details > summary::-webkit-details-marker {
 
 .disclosure {
   display: inline-block;
+}
+
+/* Generator */
+.hidden[type="checkbox"] {
+  width: 0;
+  height: 0;
+}
+
+.disclosure-select > label {
+  filter: saturate(0);
+}
+
+.checkable:checked + label {
+  filter: saturate(1);
 }
