@@ -1,6 +1,7 @@
 # Media Disclosures
 **An open-source, always evolving, universal content rating system.**
 
+![](https://disclosures.media/assets/social-card.png)
 ## Ratings
 Click the triangles to expand.
 ### Special
