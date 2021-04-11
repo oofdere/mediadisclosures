@@ -30,3 +30,8 @@ details > summary::-webkit-details-marker {
 .checkable:checked + label {
   filter: saturate(1);
 }
+
+/* PWA update toasts */
+pwa-update::part(updateToast) {
+  z-index: 50;
+}
