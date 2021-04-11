@@ -11,8 +11,23 @@
 <link rel="stylesheet" href="assets/disclosure-icons.css">
 <link rel="stylesheet" href="assets/style.css">
 
-<!-- Halfmoon CSS -->
+<!-- Halfmoon CSS w/ dark flicker fix (https://github.com/halfmoonui/halfmoon/issues/37#issuecomment-812700029) -->
+<script type="text/javascript">
+  if (document.cookie.includes("halfmoon_preferredMode=dark-mode")) {
+		document.documentElement.classList.add("dark-mode");
+    console.log("Dark mode fix applied.");
+  }
+</script>
 <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+<style>
+	.dark-mode body {
+		background-color: var(--dm-base-body-bg-color);
+		background-image: var(--dm-base-body-bg-image);
+		color: var(--dm-base-text-color);
+	  -webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale
+	}
+</style>
 
 <!-- Favicon and title -->
 <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16">
