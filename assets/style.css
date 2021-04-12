@@ -12,7 +12,6 @@ details > summary::-webkit-details-marker {
   overflow-y: hidden;
   white-space: nowrap;
 }
-
 .disclosure {
   display: inline-block;
 }
@@ -22,13 +21,11 @@ details > summary::-webkit-details-marker {
   width: 0;
   height: 0;
 }
-
 .disclosure-select > label {
-  filter: saturate(0);
+  filter: grayscale(100%) contrast(0%);
 }
-
 .checkable:checked + label {
-  filter: saturate(1);
+  filter: grayscale(0%) contrast(100%);
 }
 
 /* PWA update toasts */
