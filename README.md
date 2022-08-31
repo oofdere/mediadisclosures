@@ -22,6 +22,17 @@ Click the triangles to expand.
     <p>This work may contain violence involving animated characters, often but not necessarily in a comedic context and without blood or gore.</p>
 </details>
 
+### Accessibility
+<details>
+    <summary>AD  - Audio Description</summary>
+    <p>This work has audio description available in its original language!</p>
+</details>
+<details>
+    <summary>SUB - Subtitled</summary>
+    <pT>his work has subtitles/closed captions available in its original language!</p>
+</details>
+
+
 ### Features
 <details>
     <summary>I - Interactive</summary>
@@ -34,6 +45,10 @@ Click the triangles to expand.
 <details>
     <summary>DLC - Downloadable Content</summary>
     <p>This work has additional downloadable content, which has been sanctioned by its official developers, paid or otherwise.</p>
+</details>
+<details>
+    <summary>AC - Access Controls</summary>
+    <p>This work utilizes access control measures (DRM) such as CSS, AACS, or Widevine.</p>
 </details>
 
 ### Sex/Violence/Drugs
