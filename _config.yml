@@ -1,9 +1,0 @@
-collections:
-   special:
-      sort_by: order
-   features:
-      sort_by: order
-   sex_drugs_violence:
-      sort_by: order
-   content_descriptors:
-      sort_by: order
